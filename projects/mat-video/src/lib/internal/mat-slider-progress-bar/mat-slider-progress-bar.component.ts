@@ -1,4 +1,4 @@
-import { Component, Input, ElementRef, ChangeDetectorRef, ChangeDetectionStrategy, Optional, Attribute } from "@angular/core";
+import { Component, Input, ElementRef, ChangeDetectorRef, ChangeDetectionStrategy, Optional, Attribute, NgZone } from "@angular/core";
 import { MatSlider, MAT_SLIDER_VALUE_ACCESSOR } from "@angular/material/slider";
 import { FocusMonitor } from "@angular/cdk/a11y";
 import { Directionality } from "@angular/cdk/bidi";
@@ -56,6 +56,8 @@ export class MatSliderProgressBarComponent extends MatSlider {
   }
   private pBufferValue = 0;
 
+  private document: Document;
+
   /** The id of the progress bar. */
   sliderprogressbarId = `mat-slider-progress-bar-${sliderprogressbarId++}`;
 
@@ -63,10 +65,11 @@ export class MatSliderProgressBarComponent extends MatSlider {
     elementRef: ElementRef,
     focusMonitor: FocusMonitor,
     changeDetectorRef: ChangeDetectorRef,
+    private ngzoe: NgZone,
     @Optional() dir: Directionality,
     @Attribute("tabindex") tabIndex: string
   ) {
-    super(elementRef, focusMonitor, changeDetectorRef, dir, tabIndex);
+    super(elementRef, focusMonitor, changeDetectorRef, dir, tabIndex, ngzoe, document);
     this.tabIndex = parseInt(tabIndex, 10) || 0;
   }
 

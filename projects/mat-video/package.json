@@ -24,11 +24,11 @@
     "player",
     "html5"
   ],
-  "author": "Nicholas Koehler",
+  "author": "Nicholas Koehler & Longcharmroeun",
   "bugs": {
-    "url": "https://github.com/nkoehler/mat-video/issues"
+    "url": "https://github.com/longcharmroeun/mat-video"
   },
-  "homepage": "https://github.com/nkoehler/mat-video",
+  "homepage": "https://github.com/longcharmroeun/mat-video",
   "peerDependencies": {
     "@angular/common": ">=8.0.0",
     "@angular/compiler": ">=8.0.0",

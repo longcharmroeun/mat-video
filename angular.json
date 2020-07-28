@@ -158,6 +158,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mat-video-app"
+    }
+  },
+  "defaultProject": "mat-video-app",
+  "cli": {
+    "analytics": false
+  }
 }

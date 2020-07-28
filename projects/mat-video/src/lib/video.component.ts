@@ -22,8 +22,8 @@ import { EventService } from "./services/event.service";
   styleUrls: ["./video.component.scss", "./styles/icons.scss"]
 })
 export class MatVideoComponent implements AfterViewInit, OnChanges, OnDestroy {
-  @ViewChild("player", { static: false }) private player: ElementRef;
-  @ViewChild("video", { static: false }) private video: ElementRef;
+  @ViewChild("player") private player: ElementRef;
+  @ViewChild("video") private video: ElementRef;
 
   @Input() src: string | MediaStream | MediaSource | Blob = null;
   @Input() title: string = null;
