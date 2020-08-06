@@ -1,7 +1,7 @@
 # this forked from (https://github.com/nkoehler/mat-video) will continue maintenance to support angular 10 and fix many error on previous version.
 
 # mat-video is an Angular 8/9/10 video player using Material
-[![npm version](https://badge.fury.io/js/mat-video.svg)](https://badge.fury.io/js/mat-video)
+[![npm version](https://badge.fury.io/js/ng-mat-video.svg)](https://badge.fury.io/js/ng-mat-video)
 [![Build Status](https://travis-ci.org/nkoehler/mat-video.svg?branch=master)](https://travis-ci.org/nkoehler/mat-video)
 [![Maintainability](https://api.codeclimate.com/v1/badges/46fb1a751d60d0f8b316/maintainability)](https://codeclimate.com/github/nkoehler/mat-video/maintainability)
 
@@ -45,7 +45,7 @@ ng add @angular/material
 To use **mat-video** in your project install it via [npm](https://www.npmjs.com/package/mat-video):
 
 ```
-npm install --save mat-video
+npm install --save ng-mat-video
 ```
 
 Add the following to your module:
