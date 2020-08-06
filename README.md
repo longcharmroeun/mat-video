@@ -1,4 +1,6 @@
-# mat-video is an Angular 8/9+ video player using Material
+# this forked from (https://github.com/nkoehler/mat-video) will continue maintenance to support angular 10 and fix many error on previous version.
+
+# mat-video is an Angular 8/9/10 video player using Material
 [![npm version](https://badge.fury.io/js/mat-video.svg)](https://badge.fury.io/js/mat-video)
 [![Build Status](https://travis-ci.org/nkoehler/mat-video.svg?branch=master)](https://travis-ci.org/nkoehler/mat-video)
 [![Maintainability](https://api.codeclimate.com/v1/badges/46fb1a751d60d0f8b316/maintainability)](https://codeclimate.com/github/nkoehler/mat-video/maintainability)
@@ -50,7 +52,7 @@ Add the following to your module:
 
 ```typescript
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatVideoModule } from 'mat-video';
+import { MatVideoModule } from 'ng-mat-video';
 
 @NgModule({
   imports: [
@@ -143,7 +145,7 @@ This API feature is considered experimental, and is subject to change.
 mat-video Version | Angular Version
 --- | ---
 1.0.0 - 2.7.2 | Angular 5, 6, 7, 8
-2.8.0+ | Angular 8, 9
+2.8.0+ | Angular 8, 9, 10
 
 
 ## Credits
